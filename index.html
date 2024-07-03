@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Testing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.0.2/mocha.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.0.2/mocha.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
+</head>
+<body>
+    <div id="mocha"></div>
+    <script>
+        // the mocha test style to use - we use BDD - Behviour Driven Development
+        mocha.setup('bdd');
+        //ensure the assert function is available
+        var assert = chai.assert;
+    </script>
+
+    <!-- the function to be tested -->
+
+    <script src="Function/functions/countAllFromTown.js" charset="utf-8"></script>
+    <script src="test-cases/countallFromTown.test.js" charset="utf-8"></script>
+
+    <script src="Function/functions/countAllPaarl.js" charset="utf-8"></script>
+    <script src="test-cases/countallFromTown.test.js" charset="utf-8"></script>
+
+    <script src="Function/functions/countRegNumber.js" charset="utf-8"></script>
+    <script src="test-cases/countRegNumber.test.js" charset="utf-8"></script>
+
+    <script src="Function/functions/findItemsOver.js" charset="utf-8"></script>
+    <script src="test-cases/findItemsOver.test.js" charset="utf-8"></script>
+
+    <script src="Function/functions/findItemsOver20.js" charset="utf-8"></script>
+    <script src="test-cases/findItemsOver20.test.js" charset="utf-8"></script>
+
+    <script src="Function/functions/fromWhere.js" charset="utf-8"></script>
+    <script src="test-cases/fromWhere.test.js" charset="utf-8"></script>
+
+    <script src="Function/functions/greet.js" charset="utf-8"></script>
+    <script src="test-cases/greet.test.js" charset="utf-8"></script>
+
+    <script src="Function/functions/isFromBellville.js" charset="utf-8"></script>
+    <script src="test-cases/isFromBellville.test.js" charset="utf-8"></script>
+
+    <script src="Function/functions/isWeekday.js" charset="utf-8"></script>
+    <script src="test-cases/isWeekday.test.js" charset="utf-8"></script>
+
+    <script src="Function/functions/mostProfitableDepartment.js" charset="utf-8"></script>
+    <script src="test-cases/mostProfitableDepartment.test.js" charset="utf-8"></script>
+
+    <script src="Function/functions/regCheck.js" charset="utf-8"></script>
+    <script src="test-cases/regCheck.test.js" charset="utf-8"></script>
+
+    <script src="Function/functions/sameWeekday.js" charset="utf-8"></script>
+    <script src="test-cases/sameWeekday.test.js" charset="utf-8"></script>
+
+    <script src="Function/functions/totalPhoneBill.js" charset="utf-8"></script>
+    <script src="test-cases/totalPhoneBill.test.js" charset="utf-8"></script>
+
+    <script src="Function/functions/transportFee.js" charset="utf-8"></script>
+    <script src="test-cases/transportFee.test.js"></script>
+
+    <script src="Function/functions/yearsAgo.js" charset="utf-8"></script>
+    <script src="test-cases/yearsAgo.test.js" charset="utf-8"></script>
+
+    
+
+  
+
+
+   
+  
+
+    <script>
+        // configure and run mocha
+        mocha.checkLeaks();
+        mocha.run();
+    </script>
+</body>
+</html>
